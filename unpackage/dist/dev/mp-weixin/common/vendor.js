@@ -8016,6 +8016,30 @@ function normalizeComponent (
 }
 
 
+/***/ }),
+/* 11 */
+/*!******************************************************!*\
+  !*** C:/Users/Hasee/Desktop/uGoApp/utils/ruquest.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = function _default(_ref) {var url = _ref.url,method = _ref.method,data = _ref.data;
+  return new Promise(function (resolve, reject) {
+    uni.request({
+      url: 'https://api-hmugo-web.itheima.net/api/public/v1' + url,
+      method: method,
+      data: data }).
+    then(function (res) {
+      // console.log(res[1])
+      resolve(res[1]);
+
+    });
+  });
+};exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
 /***/ })
 ]]);
 //# sourceMappingURL=../../.sourcemap/mp-weixin/common/vendor.js.map

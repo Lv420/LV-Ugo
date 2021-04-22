@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.home .new_box.data-v-92bb8f34 {
+  background-color: #fe2c4b;
+  padding: 20rpx 16rpx;
+  position: relative;
+}
+.home .new_box input.data-v-92bb8f34 {
+  background-color: #fff;
+  text-align: center;
+  -webkit-border-radius: 10rpx;
+          border-radius: 10rpx;
+}
+.home .new_box icon.data-v-92bb8f34 {
+  position: absolute;
+  top: 26rpx;
+  left: 300rpx;
+}
+.home .new_box.left icon.data-v-92bb8f34 {
+  left: 25rpx;
+}
+.home .new_box.left input.data-v-92bb8f34 {
+  text-align: left;
+  padding-left: 45rpx;
+}
+.home .swiper_style.data-v-92bb8f34 {
+  width: 100%;
+  height: 340rpx;
+}
+.home .swiper_style .swiper_img.data-v-92bb8f34 {
+  width: 100%;
+  height: 100%;
+}
+.home .nav_box.data-v-92bb8f34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 194rpx;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.home .nav_box navigator.data-v-92bb8f34 {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  text-align: center;
+}
+.home .nav_box navigator image.data-v-92bb8f34 {
+  width: 128rpx;
+  height: 140rpx;
+}
+.home .foolots_box.data-v-92bb8f34 {
+  background-color: #f4f4f4;
+  padding-top: 30rpx;
+}
+.home .foolots_box image.data-v-92bb8f34 {
+  width: 100%;
+  height: 68rpx;
+}
+.home .foolots_box .content_box.data-v-92bb8f34 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 470rpx;
+  background-color: #fff;
+  padding: 20rpx 17rpx 10rpx;
+}
+.home .foolots_box .content_box .left.data-v-92bb8f34 {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+          flex: 3;
+  height: 468rpx;
+}
+.home .foolots_box .content_box .left image.data-v-92bb8f34 {
+  width: 100%;
+  height: 100%;
+}
+.home .foolots_box .content_box .rigth.data-v-92bb8f34 {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+          flex: 7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.home .foolots_box .content_box .rigth image.data-v-92bb8f34 {
+  width: 232rpx;
+  height: 232rpx;
+}
+.home .top.data-v-92bb8f34 {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #ccc;
+  opacity: .5;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  right: 22rpx;
+  bottom: 30rpx;
+}
+
