@@ -105,15 +105,6 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  if (!_vm._isMounted) {
-    _vm.e0 = function($event) {
-      _vm.isplace = true
-    }
-
-    _vm.e1 = function($event) {
-      _vm.isplace = false
-    }
-  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -145,55 +136,59 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var searchbar = function searchbar() {__webpack_require__.e(/*! require.ensure | components/searchBar */ "components/searchBar").then((function () {return resolve(__webpack_require__(/*! ../../components/searchBar.vue */ 54));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 {
+  components: {
+    searchbar: searchbar },
 
   data: function data() {
     return {
-      isplace: false,
+
       swiperlist: [], // 轮播图数据
       navigationlist: [], // 菜单导航数据
       flootlist: [], // 楼层数据

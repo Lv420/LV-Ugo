@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "搜索页面",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "searchbox": "/components/searchbox"
+  }
+}

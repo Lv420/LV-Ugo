@@ -1,10 +1,11 @@
 <template>
 	<view class="home">
 		<!-- 搜索框 -->
-		<view class="new_box" :class="{left:isplace}">
+		<!-- <view class="new_box" :class="{left:isplace}">
 			<icon type="search" size="16"></icon>
 			<input @focus="isplace=true" @blur="isplace=false" type="text" placeholder="搜索" />
-		</view>
+		</view> -->
+		<searchbar></searchbar>
 		<!-- 轮播图 -->
 		<swiper class :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000">
 			<swiper-item class="swiper_style" v-for="item in swiperlist" :key='item.goods_id'>
@@ -31,7 +32,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="top" v-if="topShow" @click="top">
+		<view class="top" v-show="topShow" @click="top">
 			<view class="jiantou">
 				^
 			</view>
@@ -42,15 +43,18 @@
 </template>
 
 <script>
+	import searchbar from '../../components/searchBar.vue'
 	export default {
-
+		components: {
+			searchbar
+		},
 		data() {
 			return {
-				isplace: false,
+
 				swiperlist: [], // 轮播图数据
 				navigationlist: [], // 菜单导航数据
-				flootlist: [] ,// 楼层数据
-				topShow:false
+				flootlist: [], // 楼层数据
+				topShow: false
 			}
 		},
 		onLoad() {
@@ -81,60 +85,27 @@
 			})
 
 		},
-		onPageScroll(event){
+		onPageScroll(event) {
 			// console.log(event)
-			if(event.scrollTop >= 200){
+			if (event.scrollTop >= 200) {
 				this.topShow = true
-			}else{
+			} else {
 				this.topShow = false
 			}
 		},
 		methods: {
 			// 点击顶部按钮返回顶部
-			top(){
+			top() {
 				uni.pageScrollTo({
-					scrollTop:0
+					scrollTop: 0
 				})
-				}
+			}
 		}
 	}
 </script>
 
 <style lang="scss" scoped>
 	.home {
-		.new_box {
-			background-color: #fe2c4b;
-			padding: 20rpx 16rpx;
-			position: relative;
-
-			input {
-				background-color: #fff;
-				text-align: center;
-				// transition: .5s;
-				border-radius: 10rpx;
-			}
-
-			icon {
-				position: absolute;
-				top: 26rpx;
-				left: 300rpx;
-				// transition: .5s;
-			}
-		}
-
-		.new_box.left {
-			icon {
-				left: 25rpx;
-			}
-
-			input {
-				text-align: left;
-				padding-left: 45rpx;
-				// border-radius: 5px;
-
-			}
-		}
-
 		.swiper_style {
 			width: 100%;
 			height: 340rpx;
@@ -211,7 +182,7 @@
 			position: fixed;
 			right: 22rpx;
 			bottom: 30rpx;
-			
+
 		}
 
 	}
