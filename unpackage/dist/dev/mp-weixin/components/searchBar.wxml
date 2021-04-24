@@ -1,0 +1,1 @@
+<view class="{{['new_box data-v-c2b835c0',(isplace)?'left':'']}}"><icon type="search" size="16" class="data-v-c2b835c0"></icon><input type="text" placeholder="搜索" data-event-opts="{{[['tap',[['searchbtn',['$event']]]],['focus',[['e0',['$event']]]],['blur',[['e1',['$event']]]]]}}" bindtap="__e" bindfocus="__e" bindblur="__e" class="data-v-c2b835c0"/></view>
